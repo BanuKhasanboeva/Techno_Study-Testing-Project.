@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite" parallel="tests" thread-count="2">
+    <test  name="My Test 1" >
+        <parameter name="BrowserTipi" value="chrome"></parameter>
+        <classes>
+            <class name="US07.us07"></class>
+        </classes>
+    </test>
+    <test  name="My Test 2">
+        <parameter name="BrowserTipi" value="firefox"></parameter>
+        <classes>
+            <class name="US07.us07"></class>
+        </classes>
+    </test>
+
+</suite>
